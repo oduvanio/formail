@@ -1,0 +1,4 @@
+{ip}
+{time}
+{host}
+{name}

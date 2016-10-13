@@ -1,0 +1,6 @@
+{
+	"tpl":"-formail/form.tpl",
+	"onsubmit":true,
+	"data":true,
+	"autosavename":"present"
+}

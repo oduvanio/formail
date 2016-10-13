@@ -1,0 +1,14 @@
+{
+	"name":"oduvanio/formail",
+	"require":{
+		"infrajs/controller":"~1",
+		"infrajs/router":"~1",
+		"infrajs/layer-onsubmit":"~1",
+		"infrajs/ans":"~1",
+		"infrajs/mail":"~1",
+		"infrajs/path":"~1",
+		"infrajs/config":"~1",
+		"infrajs/template":"~1",
+		"infrajs/layer-autosave":"~1"
+	}
+}

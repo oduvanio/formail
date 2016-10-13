@@ -1,0 +1,10 @@
+{
+	"subject":"Подарок другу с сайта",
+	"required":{
+		"name":true,
+		"sername":true,
+		"email":true,
+		"friend-name":true,
+		"friend-phone":true
+	}
+}
