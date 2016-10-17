@@ -24,8 +24,8 @@
 			background: none;
 		}
 	</style>
-	<h1>{config.title}</h1>
-	<p>{config.description}</p>
+	<h1>Подарок другу с сайта</h1>
+	<p>Если вы являетесь членом клуба, либо проходили лечение в нашей клинике, то можете сделать приятный подарок своему другу, родственнику, знакомому или просто хорошему человеку.<br>Для этого необходимо заполнить форму ниже с указанием обязательных полей, отмеченных красным цветом.<br>После заполнения формы, человек, которого вы указали в форме получит смс уведомление о скидке на лечение в нашей клинике.</p>
 	<form action="/-formail/">
 		<div class="main">
 			<div class="field">
@@ -51,7 +51,7 @@
 			<input type="submit">
 		</div>
 	</form>
-	<img src="{config.img}" style="float: right; width: 40%;">
+	<img src="/data/images/discount.jpg" style="float: right; width: 40%;">
 	{config.ans?config.ans:msg}
 {msg:}
 	{result?:good?:bad}
