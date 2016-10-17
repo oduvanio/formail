@@ -24,7 +24,8 @@
 			background: none;
 		}
 	</style>
-	<h1>Подарок другу с сайта</h1>
+	<h1>{config.title}</h1>
+	<p>{config.description}</p>
 	<form action="/-formail/">
 		<div class="main">
 			<div class="field">
@@ -50,6 +51,7 @@
 			<input type="submit">
 		</div>
 	</form>
+	<img src="{config.img}" style="float: right; width: 40%;">
 	{config.ans?config.ans:msg}
 {msg:}
 	{result?:good?:bad}
