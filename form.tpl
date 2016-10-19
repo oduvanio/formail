@@ -21,11 +21,22 @@
 		form[action="/-formail/"] input[type="submit"] {
 			margin-top: 10px;
 			float: right;
-			background: none;
+			background: rgba(0, 255, 0, 0.3);
+			color: black;
+		}
+		#formailMsg blockquote {
+			clear: both;
+		}
+		#formailMsg blockquote p {
+			font-family: serif;
+			font-size: 18px;
+		}
+		p.formail {
+			font-family: serif;
 		}
 	</style>
 	<h1>Подарок другу с сайта</h1>
-	<p>Если вы являетесь членом клуба, либо проходили лечение в нашей клинике, то можете сделать приятный подарок своему другу, родственнику, знакомому или просто хорошему человеку.<br>Для этого необходимо заполнить форму ниже с указанием обязательных полей, отмеченных красным цветом.<br>После заполнения формы, человек, которого вы указали в форме получит смс уведомление о скидке на лечение в нашей клинике.</p>
+	<p class="formail">Если вы являетесь <a href="/actions/club">членом клуба</a>, либо проходили лечение в нашей клинике, то можете сделать приятный подарок своему другу, родственнику, знакомому или просто хорошему человеку.<br>Для этого необходимо заполнить форму ниже с указанием обязательных полей, отмеченных красным цветом.<br>После заполнения формы, человек, которого вы указали в форме получит смс уведомление о скидке на лечение в нашей клинике.</p>
 	<form action="/-formail/">
 		<div class="main">
 			<div class="field">
@@ -48,15 +59,28 @@
 				<label for="friend-phone">Телефон друга:</label>
 				<input type="tel" name="friend-phone" required>
 			</div>
-			<input type="submit">
+			<input class="btn btn-success" type="submit">
 		</div>
 	</form>
 	<img src="/data/images/discount.jpg" style="float: right; width: 40%;">
 	{config.ans?config.ans:msg}
 {msg:}
 	{result?:good?:bad}
-	{msg}
-	{good:}
-		Всё ок!
-	{bad:}
-		Всё не ок!
+	<div id="formailMsg">
+		<blockquote>
+			<p>{msg}</p>
+		</blockquote>
+	</div>
+{good:}
+	<style>
+		#formailMsg blockquote {
+			border-color: rgba(0, 255, 0, 0.3);
+		}
+	</style>
+{bad:}
+	<style>
+		#formailMsg blockquote {
+			border-color: rgba(255, 0, 0, 0.2);
+		}
+	</style>
+	
