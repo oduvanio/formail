@@ -62,6 +62,26 @@
 			<input class="btn btn-success" type="submit">
 		</div>
 	</form>
+	<script>
+		domready( function () {
+			Event.one('Controller.onshow', function () {
+				var layer = Controller.ids["{id}"];
+				layer.onsubmit = function (layer) {
+					var ans = layer.config.ans;
+					if (!ans.result) return;
+					if (!Ya || !Ya._metrika.counter) {
+						var ya = Ya._metrika.counter;
+						console.info('ya.reachGoal formail');
+						ya.reachGoal('formail');
+					}
+					if (window.ga) {
+						console.info('ga send event formail');
+						ga('send', 'event', 'formail');
+					}
+				}
+			});
+		});
+	</script>
 	<img src="/data/images/discount.jpg" style="float: right; width: 40%;">
 	{config.ans?config.ans:msg}
 {msg:}
