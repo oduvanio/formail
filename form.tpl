@@ -32,7 +32,7 @@
 			font-size: 18px;
 		}
 		p.formail {
-			font-family: serif;
+			
 		}
 	</style>
 	<h1>Подарок другу с сайта</h1>
