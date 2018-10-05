@@ -1,6 +1,7 @@
 {
 	"tpl":"-formail/form.tpl",
 	"onsubmit":true,
+	"goal":"formail",
 	"data":true,
-	"autosavename":"present"
+	"autosavename":"user"
 }
